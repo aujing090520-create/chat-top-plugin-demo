@@ -330,7 +330,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 548px;
+  height: 586px;
   border-radius: 16px 16px 0 0;
   background: var(--surface);
   box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
@@ -667,7 +667,6 @@ button {
   }
 
   .control-panel {
-    order: -1;
     width: 375px;
     max-width: 100%;
     max-height: none;

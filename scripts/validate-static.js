@@ -35,7 +35,7 @@ const requiredSnippets = [
   ["src/app.js", 'classList.add("tall")'],
   ["src/app.js", "window.__chatTopPluginDemo"],
   ["src/styles.css", "grid-template-columns: repeat(5"],
-  ["src/styles.css", "height: 548px"],
+  ["src/styles.css", "height: 586px"],
   ["src/styles.css", "width: 375px"],
   ["src/styles.css", "height: 812px"],
   ["index.html", "后台开关：原生半屏"]

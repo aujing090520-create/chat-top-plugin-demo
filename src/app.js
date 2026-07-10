@@ -70,7 +70,7 @@ const state = {
 };
 
 const groupCandidates = {
-  recentViewed: ["phrases", "topics", "voice-room", "class", "gift", "live-lesson", "hello-spanish"],
+  recentViewed: ["phrases", "topics", "gift", "class"],
   recentDeleted: state.recentDeletedIds,
   recommended: [
     "daily-quiz",
