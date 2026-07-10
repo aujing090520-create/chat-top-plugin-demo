@@ -6,12 +6,10 @@
   "scripts": {
     "build": "node --check src/app.js && node --check src/logic.js && node scripts/validate-static.js && node scripts/test-logic.js && next build",
     "build:demo": "node --check src/app.js && node --check src/logic.js && node scripts/validate-static.js && node scripts/test-logic.js",
-    "build:opennext": "opennextjs-cloudflare build --skipWranglerConfigCheck",
     "dev": "next dev",
     "serve": "python3 -m http.server 4173"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "1.20.1",
     "next": "16.2.10",
     "react": "19.2.3",
     "react-dom": "19.2.3"
