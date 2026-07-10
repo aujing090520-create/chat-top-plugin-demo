@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat TAB Top Plugin Add Entry Demo</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="workbench">
+      <section class="phone-shell" aria-label="HelloTalk mobile demo">
+        <div class="phone" id="phone">
+          <div class="statusbar">
+            <span>9:41</span>
+            <span class="status-icons">5G 100%</span>
+          </div>
+          <section id="app"></section>
+        </div>
+      </section>
+
+      <aside class="control-panel" aria-label="Demo controls">
+        <div class="panel-header">
+          <p class="eyebrow">Codex Demo</p>
+          <h1>Chat 顶部插件栏 Add More</h1>
+        </div>
+
+        <div class="control-block">
+          <label class="toggle-row">
+            <span>后台开关：原生半屏</span>
+            <input id="nativeSwitch" type="checkbox" checked />
+          </label>
+          <label class="toggle-row">
+            <span>模拟数量上限</span>
+            <input id="maxSwitch" type="checkbox" />
+          </label>
+          <label class="toggle-row">
+            <span>下一次添加失败</span>
+            <input id="failSwitch" type="checkbox" />
+          </label>
+        </div>
+
+        <div class="control-block">
+          <button id="openAddMore" class="primary-button" type="button">打开 Add More</button>
+          <button id="resetDemo" class="secondary-button" type="button">重置状态</button>
+        </div>
+
+        <div class="control-block">
+          <p class="panel-title">验收覆盖</p>
+          <ul class="check-list">
+            <li>展开态默认展示 Add More</li>
+            <li>开关关闭回退 LearnTab</li>
+            <li>原生半屏支持搜索和上拉</li>
+            <li>最近浏览、最近删除、推荐添加分组展示</li>
+            <li>去重优先级：最近删除 &gt; 最近浏览 &gt; 推荐添加</li>
+            <li>添加成功后保留弹层并刷新顶部栏</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <script src="./src/app.js" type="module"></script>
+  </body>
+</html>
