@@ -91,7 +91,8 @@ const maxSwitch = document.querySelector("#maxSwitch");
 const failSwitch = document.querySelector("#failSwitch");
 const openAddMore = document.querySelector("#openAddMore");
 const resetDemo = document.querySelector("#resetDemo");
-const assetBase = document.querySelector("script#__NEXT_DATA__") ? "/assets/" : "./public/assets/";
+const isNextRuntime = [...document.scripts].some((script) => script.src.includes("/_next/"));
+const assetBase = isNextRuntime ? "/assets/" : "./public/assets/";
 
 function assetPath(name) {
   return `${assetBase}${name}`;
